@@ -1,0 +1,14 @@
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>Beyond The Platforms</strong><br>
+      <span>AI · Copilot Studio · Microsoft Fabric · Power Platform</span>
+    </div>
+    <div class="socials">
+      {% for social in site.data.social %}
+        <a href="{{ social.url }}" target="_blank" rel="noopener">{{ social.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="container footer-bottom">© {{ site.time | date: '%Y' }} Beyond The Platforms. Built with GitHub Pages and Jekyll.</div>
+</footer>

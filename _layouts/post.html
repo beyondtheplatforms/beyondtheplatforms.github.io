@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="post">
+  <div class="container post-container">
+    <a class="back-link" href="{{ '/blog/' | relative_url }}">← Torna al blog</a>
+    <div class="section-eyebrow">{{ page.category }}</div>
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">{{ page.date | date: "%d/%m/%Y" }}{% if page.tags %} · {{ page.tags | join: " · " }}{% endif %}</div>
+    <div class="post-content">{{ content }}</div>
+  </div>
+</article>

@@ -1,0 +1,23 @@
+title: "Beyond The Platforms"
+description: "AI, Copilot Studio, Microsoft Fabric and Power Platform insights."
+url: "https://beyondtheplatforms.github.io"
+baseurl: ""
+lang: "it-IT"
+timezone: "Europe/Rome"
+
+permalink: /blog/:title/
+
+collections:
+  events:
+    output: false
+  live_sessions:
+    output: false
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
