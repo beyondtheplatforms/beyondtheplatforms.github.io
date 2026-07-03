@@ -9,11 +9,18 @@ subtitle: "Una raccolta ordinata delle sessioni live, video tecnici, demo e cont
   <div class="container">
     <div class="list">
       {% for session in site.data.live_sessions %}
-      <a classon.url }}
-        <h3>{{ session.title }}</h3>
-        <p>{{ session.description }}</p>
-        <div class="meta">{{ session.platform }} · {{ session.topic }} · {{ session.date }}</div>
-      </a>
+      
+<a classon.url }}
+
+  <img
+    src="https://img.youtube.com/vi/{{ session.video_id }}/hqdefault.jpg"
+    alt="{{ session.title }}"
+    style="width:100%; border-radius:12eta">
+    {{ session.platform }} · {{ session.topic }} · {{ session.date }}
+  </div>
+
+</a>
+
       {% endfor %}
     </div>
   </div>
