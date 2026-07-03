@@ -2,13 +2,14 @@
   date: "2026-07-02"
   platform: "YouTube"
   topic: "Copilot Studio"
-  url: "https://www.youtube.com/watch?v=B8FyUH4yruM&source_ve_path=MjM4NTE&embeds_referring_euri=https%3A%2F%2Fbeyondtheplatforms.com%2F"
+  video_id: "B8FyUH4yruM"
+  url: "https://www.youtube.com/watch?v=B8FyUH4yruM"
   description: "Discover Fabric AI Skill & Copilot: Innovation and Automation in Action"
 
 - title: "Power Platform AI"
   date: "2026-06-15"
   platform: "YouTube"
   topic: "Microsoft Fabric"
+  video_id: "vbMlwmz8w-s"
   url: "https://www.youtube.com/watch?v=vbMlwmz8w-s"
   description: "Power Platform AI"
-
