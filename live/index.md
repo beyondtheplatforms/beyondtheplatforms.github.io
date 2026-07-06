@@ -5,17 +5,22 @@ eyebrow: Live Session
 subtitle: "Una raccolta ordinata delle sessioni live, video tecnici, demo e contenuti formativi pubblicati online."
 ---
 
-<div class="containerimg
-          class="youtube-thumb"
-          src="https://img.youtube.com/vi/{{ session.video_id }}/hqdefault.jpg"
-      <div class="meta">
-        {{ session.platform }} · {{ session.topic }} · {{ session.date }}
-      </div>
+<div class="container">
 
-    </div>
+{% for session in site.data.live_sessions %}
 
-    {% endfor %}
+<div class="card">
 
-  </div>
+<h3>{{ session.title }}</h3>
+
+<p>{{ session.description }}</p>
+
+<div class="meta">
+{{ session.platform }} · {{ session.topic }} · {{ session.date }}
+</div>
+
+</div>
+
+{% endfor %}
 
 </div>
