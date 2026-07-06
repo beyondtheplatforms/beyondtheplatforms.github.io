@@ -7,28 +7,30 @@ subtitle: "Una raccolta ordinata delle sessioni live, video tecnici, demo e cont
 
 <div class="container">
 
-  <div class="grid grid-2">
+  {% for session in site.data.live_sessions %}
 
-    {% for session in site.data.live_sessions %}
+  <div class="card" style="margin-bottom:40px;">
 
-    <div class="card">
+    <h3>{{ session.title }}</h3>
 
-      <h3>{{ session.title }}</h3>
+    <div style="margin:20px 0;">
+      <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/{{ session.video_id }}"
+        title="{{ session.title }}"
+        frameborder="0"
+        allowfullscreenssion.date }}
+    </div>
 
-      <div style="margin:15px 0;">
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/{{ session.video_id }}"
-          title="{{ session.title }}"
-          frameborder="0"
-          allowfullscreen>
-        </iframe>
-      </div>
+    <p style="margin-top:15px;">
+      {{ session.url }}
+        Guarda su YouTube →
+      </a>
+    </p>
 
-      <p>{rgin-top:15px;">
-        <a
-          href="{{ session.url }}"
-          target="_blank"
-          class="button button-primary">
-         iv>
+  </div>
+
+  {% endfor %}
+
+</div>
