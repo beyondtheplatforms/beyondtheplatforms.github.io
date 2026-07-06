@@ -15,20 +15,20 @@ subtitle: "Una raccolta ordinata delle sessioni live, video tecnici, demo e cont
 
       <h3>{{ session.title }}</h3>
 
-      {{ session.url }}
-
-        <img
-          class="youtube-thumb"
-          src="https://img.youtube.com/vi/{{ session.video_id }}/hqdefault./p>
-
-      <div class="meta">
-        {{ session.platform }} · {{ session.topic }} · {{ session.date }}
+      <div style="margin:15px 0;">
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/{{ session.video_id }}"
+          title="{{ session.title }}"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
       </div>
 
-    </div>
-
-    {% endfor %}
-
-  </div>
-
-</div>
+      <p>{rgin-top:15px;">
+        <a
+          href="{{ session.url }}"
+          target="_blank"
+          class="button button-primary">
+         iv>
