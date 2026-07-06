@@ -3,6 +3,7 @@
   platform: "YouTube"
   topic: "Copilot Studio"
   video_id: "B8FyUH4yruM"
+  thumbnail: "https://img.youtube.com/vi/B8FyUH4yruM/hqdefault.jpg"
   url: "https://www.youtube.com/watch?v=B8FyUH4yruM"
   description: "Discover Fabric AI Skill & Copilot: Innovation and Automation in Action"
 
@@ -11,5 +12,6 @@
   platform: "YouTube"
   topic: "Microsoft Fabric"
   video_id: "vbMlwmz8w-s"
+  thumbnail: "https://img.youtube.com/vi/vbMlwmz8w-s/hqdefault.jpg"
   url: "https://www.youtube.com/watch?v=vbMlwmz8w-s"
   description: "Power Platform AI"
