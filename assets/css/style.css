@@ -98,3 +98,19 @@ a.card:hover, .card:hover, .list-item:hover { background: var(--card-hover); tra
   .newsletter-form { grid-template-columns: 1fr; }
   .hero { padding-top: 70px; }
 }
+
+.youtube-thumb {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    margin: 15px 0;
+    transition: transform 0.2s ease;
+}
+
+.youtube-thumb:hover {
+    transform: scale(1.02);
+}
+
+.grid.grid-2 {
+    margin-top: 40px;
+}
