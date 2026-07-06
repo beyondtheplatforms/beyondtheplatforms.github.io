@@ -16,11 +16,10 @@ subtitle: "Una raccolta ordinata delle sessioni live, video tecnici, demo e cont
       <h3>{{ session.title }}</h3>
 
       <div class="youtube-embed">
-        https://www.youtube.com/embed/{{ session.video_id }}
-        </iframe>
-      </div>
-
-      <p>{{ session.description }}</p>
+        <iframe
+          width="100%"
+          height="400"
+          src="https://www.youtube   <p>{{ session.description }}</p>
 
       <div class="meta">
         {{ session.platform }} · {{ session.topic }} · {{ session.date }}
