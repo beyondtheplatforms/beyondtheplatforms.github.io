@@ -19,8 +19,9 @@ subtitle: "Una raccolta ordinata delle sessioni live, video tecnici, demo e cont
 
         <img
           class="youtube-thumb"
-          src="https://img.youtube.com/vi/{{ session.video_id }}/hqdefault.jpg"
-          alt="{{ meta">
+          src="https://img.youtube.com/vi/{{ session.video_id }}/hqdefault./p>
+
+      <div class="meta">
         {{ session.platform }} · {{ session.topic }} · {{ session.date }}
       </div>
 
