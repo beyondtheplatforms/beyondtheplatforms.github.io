@@ -47,6 +47,11 @@ description: "Beyond The Platforms: AI, Copilot Studio, Microsoft Fabric and Pow
 
 <section class="section">
   <div class="container">
-    {% include newsletter-form.html %}
+    <div class="newsletter-row">
+      <div class="newsletter-visual">
+        <img src="{{ '/assets/images/hero-portrait.jpg' | relative_url }}" alt="Paolo al lavoro" loading="lazy">
+      </div>
+      {% include newsletter-form.html %}
+    </div>
   </div>
 </section>
