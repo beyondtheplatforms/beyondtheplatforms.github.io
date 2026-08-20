@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-description: "Beyond The Platforms: AI, Copilot Studio, Microsoft Fabric and Power Platform insights."
+description: "PAOLO ASNAGHI TEST."
 ---
 
 <section class="hero">
