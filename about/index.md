@@ -9,7 +9,7 @@ subtitle: "Mi occupo di innovazione digitale, AI Agents, Copilot Studio, Power P
   <div class="container">
     <div class="about-block">
       <p>Beyond The Platforms nasce dall'idea che il valore non stia solo negli strumenti, ma nel modo in cui vengono combinati per risolvere problemi reali.</p>
-      <p>Qui raccolgo guide, riflessioni, live session, esperienze sul campo, eventi e contenuti formativi legati all'ecosistema Microsoft, all'intelligenza artificiale e all'automazione dei processi.</p>
+      <p>Qui raccolgo guide, riflessioni ed esperienze sul campo legate all'ecosistema Microsoft, all'intelligenza artificiale e all'automazione dei processi.</p>
       <p>I temi principali sono Copilot Studio, AI Agents, Microsoft Fabric, Power Platform, Power BI, Dataverse, automazione e produttività.</p>
     </div>
   </div>

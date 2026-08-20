@@ -7,8 +7,6 @@ Sito professionale statico per GitHub Pages, basato su Jekyll.
 - Home page
 - Blog con post Markdown
 - About Me
-- Live Session alimentata da `_data/live_sessions.yml`
-- Past Events alimentata da `_data/past_events.yml`
 - Newsletter page
 - Social links da `_data/social.yml`
 - Layout riutilizzabili
@@ -29,7 +27,5 @@ GitHub Pages genererà automaticamente il sito con Jekyll.
 
 - Articoli: `_posts/`
 - Social: `_data/social.yml`
-- Live: `_data/live_sessions.yml`
-- Eventi: `_data/past_events.yml`
 - Stile: `assets/css/style.css`
 - Header/Footer: `_includes/`

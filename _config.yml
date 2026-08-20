@@ -7,12 +7,6 @@ timezone: "Europe/Rome"
 
 permalink: /blog/:title/
 
-collections:
-  events:
-    output: false
-  live_sessions:
-    output: false
-
 markdown: kramdown
 kramdown:
   input: GFM
