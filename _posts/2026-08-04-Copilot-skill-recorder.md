@@ -7,7 +7,7 @@ tags: ["MCP", "AI Agents", "Copilot Studio", "Skills"]
 excerpt: "I taught a procedure to an AI Agent simply by recording my screen."
 ---
 
-Harness: the biggest Copilot Studio shift in recent years.
+Copilot Skill Recorder.
 
 <img src="{{ '/assets/images/copilot-skill-recorder.jpg' | relative_url }}" alt="Copilot Skill Recorder">
 
