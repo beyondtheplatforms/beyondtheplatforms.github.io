@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-description: "PAOLO ASNAGHI TEST."
+description: "Beyond The Platforms: AI, Copilot Studio, Microsoft Fabric and Power Platform insights."
 ---
 
 <section class="hero">
@@ -9,8 +9,7 @@ description: "PAOLO ASNAGHI TEST."
     <div class="badge">AI · Copilot Studio · Microsoft Fabric · Power Platform</div>
     <h1>Beyond The Platforms</h1>
     <p>
-      Idee, guide e contenuti pratici per andare oltre gli strumenti: costruire soluzioni,
-      agenti AI e automazioni reali nel mondo Microsoft.
+      Idee, BLA BLA BLA.
     </p>
     <div class="hero-actions">
       <a class="button button-primary" href="{{ '/blog/' | relative_url }}">Leggi gli articoli</a>
