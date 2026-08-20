@@ -8,9 +8,6 @@ description: "Beyond The Platforms: AI, Copilot Studio, Microsoft Fabric and Pow
   <div class="container">
     <div class="badge">AI · Copilot Studio · Microsoft Fabric · Power Platform</div>
     <h1>Beyond The Platforms</h1>
-    <div class="hero-visual">
-      <img src="{{ '/assets/images/hero-portrait.jpg' | relative_url }}" alt="Paolo al lavoro" loading="lazy">
-    </div>
     <p>
       Idee, guide e contenuti pratici per andare oltre gli strumenti: costruire soluzioni,
       agenti AI e automazioni reali nel mondo Microsoft.
