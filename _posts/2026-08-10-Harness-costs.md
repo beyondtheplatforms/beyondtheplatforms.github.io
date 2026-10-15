@@ -9,7 +9,7 @@ excerpt: "Why the new GitHub Copilot Harness is not just another feature, but a 
 
 Harness: the biggest Copilot Studio shift in recent years.
 
-<img src="{{ '/assets/images/harness-costs-cover.jpg' | relative_url }}" alt="Harness: la nuova gestione dei costi in Copilot Studio">
+<img src="{{ '/assets/images/harness-costs-cover.jpg' | relative_url }}" alt="Harness: the biggest Copilot Studio shift in recent years">
 
 Why the new GitHub Copilot Harness is not just another feature, but a paradigm shift in how we design enterprise AI agents.
 

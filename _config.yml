@@ -2,7 +2,7 @@ title: "Beyond The Platforms"
 description: "AI, Copilot Studio, Microsoft Fabric and Power Platform insights."
 url: "https://beyondtheplatforms.github.io"
 baseurl: ""
-lang: "it-IT"
+lang: "en-US"
 timezone: "Europe/Rome"
 
 permalink: /blog/:title/

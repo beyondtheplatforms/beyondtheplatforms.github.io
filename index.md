@@ -9,12 +9,12 @@ description: "Beyond The Platforms: AI, Copilot Studio, Microsoft Fabric and Pow
     <div class="badge">AI · Copilot Studio · Microsoft Fabric · Power Platform</div>
     <h1>Beyond The Platforms</h1>
     <p>
-      Idee, guide e contenuti pratici per andare oltre gli strumenti: costruire soluzioni,
-      agenti AI e automazioni reali nel mondo Microsoft.
+      Ideas, guides and practical content to go beyond the tools: building real solutions,
+      AI agents and automations in the Microsoft world.
     </p>
     <div class="hero-actions">
-      <a class="button button-primary" href="{{ '/blog/' | relative_url }}">Leggi gli articoli</a>
-      <a class="button button-secondary" href="{{ '/about/' | relative_url }}">Scopri di più</a>
+      <a class="button button-primary" href="{{ '/blog/' | relative_url }}">Read the articles</a>
+      <a class="button button-secondary" href="{{ '/about/' | relative_url }}">Learn more</a>
     </div>
   </div>
 </section>
@@ -24,10 +24,10 @@ description: "Beyond The Platforms: AI, Copilot Studio, Microsoft Fabric and Pow
     <div class="section-header">
       <div>
         <div class="section-eyebrow">Latest content</div>
-        <h2>Articoli in evidenza</h2>
+        <h2>Featured articles</h2>
       </div>
       <p class="section-description">
-        Approfondimenti su AI Agents, Copilot Studio, Microsoft Fabric, Power Platform e automazione dei processi.
+        In-depth insights on AI Agents, Copilot Studio, Microsoft Fabric, Power Platform and process automation.
       </p>
     </div>
 
@@ -38,7 +38,7 @@ description: "Beyond The Platforms: AI, Copilot Studio, Microsoft Fabric and Pow
         <span class="card-tag">{{ post.category }}</span>
         <h3>{{ post.title }}</h3>
         <p>{{ post.excerpt | strip_html | truncate: 135 }}</p>
-        <div class="meta">{{ post.date | date: "%d/%m/%Y" }}</div>
+        <div class="meta">{{ post.date | date: "%B %-d, %Y" }}</div>
       </a>
       {% endfor %}
     </div>

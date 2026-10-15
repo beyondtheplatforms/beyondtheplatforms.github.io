@@ -1,31 +1,31 @@
 # Beyond The Platforms - Jekyll Site V1
 
-Sito professionale statico per GitHub Pages, basato su Jekyll.
+Professional static site for GitHub Pages, built with Jekyll.
 
-## Struttura inclusa
+## Included structure
 
 - Home page
-- Blog con post Markdown
-- About Me
+- Blog with Markdown posts
+- About page
 - Newsletter page
-- Social links da `_data/social.yml`
-- Layout riutilizzabili
-- CSS responsive dark/Azure style
+- Social links from `_data/social.yml`
+- Reusable layouts
+- Responsive dark/Azure style CSS
 
-## Come pubblicare su GitHub Pages
+## How to publish on GitHub Pages
 
-1. Carica tutti i file nella root del repository `beyondtheplatforms.github.io`.
-2. Se esiste già `index.html`, eliminalo o sostituiscilo con `index.md` incluso nel pacchetto.
-3. Vai in Settings → Pages.
+1. Upload all files to the root of the `beyondtheplatforms.github.io` repository.
+2. If an `index.html` already exists, delete it or replace it with the included `index.md`.
+3. Go to Settings → Pages.
 4. Source: Deploy from a branch.
 5. Branch: main / root.
 6. Commit.
 
-GitHub Pages genererà automaticamente il sito con Jekyll.
+GitHub Pages will build the site automatically with Jekyll.
 
-## Dove modificare i contenuti
+## Where to edit content
 
-- Articoli: `_posts/`
-- Social: `_data/social.yml`
-- Stile: `assets/css/style.css`
+- Articles: `_posts/`
+- Social links: `_data/social.yml`
+- Style: `assets/css/style.css`
 - Header/Footer: `_includes/`

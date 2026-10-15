@@ -1,17 +1,17 @@
 ---
 layout: page
-title: "Ciao, sono Paolo."
-eyebrow: About Me
-subtitle: "Mi occupo di innovazione digitale, AI Agents, Copilot Studio, Power Platform, Microsoft Fabric e soluzioni pratiche per trasformare processi complessi in esperienze semplici."
+title: "Hi, I'm Paolo."
+eyebrow: About
+subtitle: "I work on digital innovation, AI Agents, Copilot Studio, Power Platform, Microsoft Fabric and practical solutions that turn complex processes into simple experiences."
 ---
 
 <section class="section">
   <div class="container">
     <div class="about-block">
-      <p>Ciao, sono Paolo. 👊</p>
-      <p>Sono un Power Platform developer, speaker e cantante rock, e vivo a Milano.</p>
-      <p>La mia carriera è un intreccio curioso tra tecnologia e creatività, e cerco sempre di unire questi due mondi nella vita di tutti i giorni.</p>
-      <p>Lavoro per <a href="https://cloudiaresearch.com/" target="_blank" rel="noopener">CloudIA Research S.p.A.</a></p>
+      <p>Hi, I'm Paolo. 👊</p>
+      <p>I'm a Power Platform developer, speaker and rock singer, and I live in Milan.</p>
+      <p>My career is a curious mix of technology and creativity, and I always try to bring these two worlds together in everyday life.</p>
+      <p>I work for <a href="https://cloudiaresearch.com/" target="_blank" rel="noopener">CloudIA Research S.p.A.</a></p>
     </div>
   </div>
 </section>
@@ -19,9 +19,9 @@ subtitle: "Mi occupo di innovazione digitale, AI Agents, Copilot Studio, Power P
 <section class="section">
   <div class="container">
     <div class="about-block">
-      <p>Beyond The Platforms nasce dall'idea che il valore non stia solo negli strumenti, ma nel modo in cui vengono combinati per risolvere problemi reali.</p>
-      <p>Qui raccolgo guide, riflessioni ed esperienze sul campo legate all'ecosistema Microsoft, all'intelligenza artificiale e all'automazione dei processi.</p>
-      <p>I temi principali sono Copilot Studio, AI Agents, Microsoft Fabric, Power Platform, Power BI, Dataverse, automazione e produttività.</p>
+      <p>Beyond The Platforms was born from the idea that value lies not only in the tools, but in how they are combined to solve real problems.</p>
+      <p>Here I collect guides, reflections and field experience related to the Microsoft ecosystem, artificial intelligence and process automation.</p>
+      <p>The main topics are Copilot Studio, AI Agents, Microsoft Fabric, Power Platform, Power BI, Dataverse, automation and productivity.</p>
     </div>
   </div>
 </section>
@@ -31,13 +31,13 @@ subtitle: "Mi occupo di innovazione digitale, AI Agents, Copilot Studio, Power P
     <div class="section-header">
       <div>
         <div class="section-eyebrow">Focus areas</div>
-        <h2>Di cosa parlo</h2>
+        <h2>What I write about</h2>
       </div>
     </div>
     <div class="grid grid-3">
-      <div class="card"><span class="card-tag">AI</span><h3>AI Agents</h3><p>Progettazione di agenti utili, integrati e misurabili.</p></div>
-      <div class="card"><span class="card-tag">Microsoft</span><h3>Copilot Studio</h3><p>Esperienze conversazionali, automazioni e integrazioni enterprise.</p></div>
-      <div class="card"><span class="card-tag">Data</span><h3>Microsoft Fabric</h3><p>Data platform, Lakehouse, Power BI e analisi moderna.</p></div>
+      <div class="card"><span class="card-tag">AI</span><h3>AI Agents</h3><p>Designing useful, integrated and measurable agents.</p></div>
+      <div class="card"><span class="card-tag">Microsoft</span><h3>Copilot Studio</h3><p>Conversational experiences, automations and enterprise integrations.</p></div>
+      <div class="card"><span class="card-tag">Data</span><h3>Microsoft Fabric</h3><p>Data platform, Lakehouse, Power BI and modern analytics.</p></div>
     </div>
   </div>
 </section>
@@ -45,8 +45,8 @@ subtitle: "Mi occupo di innovazione digitale, AI Agents, Copilot Studio, Power P
 <section class="section">
   <div class="container">
     <div class="about-block">
-      <p>Oltre alla passione per la tecnologia, sono anche un musicista rock. La musica è una parte fondamentale della mia vita e mi offre uno spazio per esprimere la mia creatività.</p>
-      <p>Amo stare da solo e credo che il tempo trascorso in solitudine sia essenziale per ricaricarsi e coltivare nuove idee. Questo mi permette di affrontare ogni progetto con entusiasmo e dedizione rinnovati.</p>
+      <p>Besides my passion for technology, I'm also a rock musician. Music is a fundamental part of my life and gives me space to express my creativity.</p>
+      <p>I love spending time alone and believe that time spent in solitude is essential to recharge and cultivate new ideas. It lets me approach every project with renewed enthusiasm and dedication.</p>
     </div>
   </div>
 </section>
@@ -55,10 +55,10 @@ subtitle: "Mi occupo di innovazione digitale, AI Agents, Copilot Studio, Power P
   <div class="container">
     <div class="section-header">
       <div>
-        <div class="section-eyebrow">Musica</div>
-        <h2>La mia playlist</h2>
+        <div class="section-eyebrow">Music</div>
+        <h2>My playlist</h2>
       </div>
-      <p class="section-description">Quello che ascolto durante le mie sessioni di sviluppo.</p>
+      <p class="section-description">What I listen to during my development sessions.</p>
     </div>
     <iframe
       style="border-radius: 12px"

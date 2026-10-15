@@ -2,7 +2,7 @@
 layout: page
 title: Blog
 eyebrow: Blog
-subtitle: "Articoli, guide e riflessioni su AI, Copilot Studio, Microsoft Fabric, Power Platform, automazione e agenti."
+subtitle: "Articles, guides and reflections on AI, Copilot Studio, Microsoft Fabric, Power Platform, automation and agents."
 ---
 
 <section class="section">
@@ -13,7 +13,7 @@ subtitle: "Articoli, guide e riflessioni su AI, Copilot Studio, Microsoft Fabric
         <span class="card-tag">{{ post.category }}</span>
         <h3>{{ post.title }}</h3>
         <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
-        <div class="meta">{{ post.date | date: "%d/%m/%Y" }}</div>
+        <div class="meta">{{ post.date | date: "%B %-d, %Y" }}</div>
       </a>
       {% endfor %}
     </div>

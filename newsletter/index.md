@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Ricevi i nuovi contenuti"
+title: "Get new content"
 eyebrow: Newsletter
-subtitle: "Iscriviti per ricevere aggiornamenti su AI, Copilot Studio, Microsoft Fabric, Power Platform e guide pratiche."
+subtitle: "Subscribe to get updates on AI, Copilot Studio, Microsoft Fabric, Power Platform and practical guides."
 ---
 
 <section class="section">
