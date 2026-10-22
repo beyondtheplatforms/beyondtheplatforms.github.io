@@ -4,6 +4,7 @@ url: "https://beyondtheplatforms.github.io"
 baseurl: ""
 lang: "en-US"
 timezone: "Europe/Rome"
+newsletter_url: "https://paoloasnaghi.substack.com"
 
 permalink: /blog/:title/
 
