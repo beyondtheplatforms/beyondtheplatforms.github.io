@@ -1,8 +1,8 @@
 <header class="navbar">
   <div class="container nav-inner">
     <a class="logo" href="{{ '/' | relative_url }}">Beyond The <span>Platforms</span></a>
-    <button class="menu-toggle" aria-label="Open menu" onclick="document.body.classList.toggle('menu-open')">☰</button>
-    <nav class="nav-links">
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
       <a href="{{ '/blog/' | relative_url }}">Blog</a>
       <a href="{{ '/about/' | relative_url }}">About</a>
       <a class="nav-cta" href="{{ '/newsletter/' | relative_url }}">Newsletter</a>

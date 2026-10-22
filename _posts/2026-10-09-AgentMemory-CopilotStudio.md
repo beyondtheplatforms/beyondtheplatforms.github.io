@@ -7,13 +7,13 @@ tags: ["AI Agents", "Copilot Studio", "Memory"]
 excerpt: "LLMs are stateless by nature. Yet our agents in Copilot Studio remember."
 ---
 
-<img src="{{ '/assets/images/agent-memory-cover.png' | relative_url }}" alt="Agent Memory in Copilot Studio">
+<img src="{{ '/assets/images/agent-memory-cover.png' | relative_url }}" alt="Agent Memory in Copilot Studio" loading="lazy" width="1536" height="1024">
 
 LLMs are stateless by nature. Yet our agents in Copilot Studio remember.
 
 How does it really work, and what does it mean in practice when we build enterprise solutions?
 
-<img src="{{ '/assets/images/agent-memory-architecture.png' | relative_url }}" alt="Agent memory architecture: short-term memory, episodic, semantic and procedural long-term memory, and the reflection cycle">
+<img src="{{ '/assets/images/agent-memory-architecture.png' | relative_url }}" alt="Agent memory architecture: short-term memory, episodic, semantic and procedural long-term memory, and the reflection cycle" loading="lazy" width="1536" height="1024">
 
 Let’s start with a technical fact that is often taken for granted: every time a large language model receives a message, it remembers nothing.
 
@@ -27,7 +27,7 @@ Copilot Studio addresses this problem with a structured memory architecture. It 
 
 ## The two fundamental levels
 
-<img src="{{ '/assets/images/agent-memory-short-vs-long-term.png' | relative_url }}" alt="Comparison table of short-term and long-term memory: duration, content, persistence, use and risk">
+<img src="{{ '/assets/images/agent-memory-short-vs-long-term.png' | relative_url }}" alt="Comparison table of short-term and long-term memory: duration, content, persistence, use and risk" loading="lazy" width="1536" height="1024">
 
 The first level is short-term memory: the context of the active conversation. Everything said during a session is available to the model for the entire duration of that session. When the session ends, this context disappears. This is the basic behavior of any conversational system.
 
@@ -35,7 +35,7 @@ The second level is long-term memory, and this is where the complexity increases
 
 ## The three types of long-term memory
 
-<img src="{{ '/assets/images/agent-memory-long-term-types.png' | relative_url }}" alt="The three types of long-term memory: episodic, semantic and procedural">
+<img src="{{ '/assets/images/agent-memory-long-term-types.png' | relative_url }}" alt="The three types of long-term memory: episodic, semantic and procedural" loading="lazy" width="1536" height="1024">
 
 Episodic memory: the agent retains a record of specific past conversations. Not everything, but the relevant moments. This makes it possible to pick up the thread even after days or weeks.
 
@@ -47,7 +47,7 @@ Procedural memory: perhaps the most sophisticated type. The agent learns how it 
 
 There is a fourth element that ties everything together: reflection.
 
-<img src="{{ '/assets/images/agent-memory-reflection.png' | relative_url }}" alt="The reflection mechanism that consolidates and cleans the agent's memory">
+<img src="{{ '/assets/images/agent-memory-reflection.png' | relative_url }}" alt="The reflection mechanism that consolidates and cleans the agent's memory" loading="lazy" width="1536" height="1024">
 
 The agent does not simply store information passively. At defined intervals, it summarizes and updates its knowledge, removing redundancies and consolidating what is relevant. It is a process that brings the agent’s behavior closer to that of a colleague who learns on the job.
 
@@ -59,7 +59,7 @@ When I return after a week, I do not have to explain my context again. The agent
 
 But memory is not free. It brings governance questions that must be addressed before going into production:
 
-<img src="{{ '/assets/images/agent-memory-governance.png' | relative_url }}" alt="Governance questions to address before enabling agent memory in production">
+<img src="{{ '/assets/images/agent-memory-governance.png' | relative_url }}" alt="Governance questions to address before enabling agent memory in production" loading="lazy" width="1024" height="1536">
 
 
 1. What should the agent remember? Not everything is useful to store. Choosing what persists is a design decision, not a technical one.

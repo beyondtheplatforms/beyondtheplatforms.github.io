@@ -7,7 +7,7 @@ tags: ["AI Agents", "Copilot Studio", "Microsoft 365 Copilot", "Cowork", "Costs"
 excerpt: "Microsoft's new consumption-based model turns Copilot from a flat license into a variable cost. Here is what actually drives the bill."
 ---
 
-<img src="{{ '/assets/images/copilot-cowork.jpg' | relative_url }}" alt="Copilot Cowork and its consumption-based cost model">
+<img src="{{ '/assets/images/copilot-cowork.jpg' | relative_url }}" alt="Copilot Cowork and its consumption-based cost model" loading="lazy" width="576" height="384">
 
 What you really need to understand today about the consumption-based model
 

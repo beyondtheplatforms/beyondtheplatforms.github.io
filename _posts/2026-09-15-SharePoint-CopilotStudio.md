@@ -7,7 +7,7 @@ tags: ["AI Agents", "Copilot Studio", "SharePoint", "Metadata", "Harness"]
 excerpt: "If your Copilot Studio agent responds using the wrong document, the problem may not be the model. It may be the way you organized knowledge in SharePoint."
 ---
 
-<img src="{{ '/assets/images/sharepoint-metadata-filtering-cover.jpg' | relative_url }}" alt="SharePoint library metadata helping a Copilot Studio agent find the right document">
+<img src="{{ '/assets/images/sharepoint-metadata-filtering-cover.jpg' | relative_url }}" alt="SharePoint library metadata helping a Copilot Studio agent find the right document" loading="lazy" width="1472" height="982">
 
 If your Copilot Studio agent responds using the wrong document, the problem may not be the model. It may be the way you organized knowledge in SharePoint.
 
