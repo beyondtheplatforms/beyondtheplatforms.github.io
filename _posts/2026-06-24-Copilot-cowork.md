@@ -3,13 +3,11 @@ layout: post
 title: "Copilot Cowork Changes the Rules of the Game — and the Costs"
 date: 2026-06-24
 category: "Copilot Studio"
-tags: ["MCP", "AI Agents", "Copilot Studio", "Skills", "Cowork"]
-excerpt: "Copilot Cowork Changes the Rules of the Game — and the Costs."
+tags: ["AI Agents", "Copilot Studio", "Microsoft 365 Copilot", "Cowork", "Costs"]
+excerpt: "Microsoft's new consumption-based model turns Copilot from a flat license into a variable cost. Here is what actually drives the bill."
 ---
 
-Copilot Cowork Changes the Rules of the Game — and the Costs
-
-<img src="{{ '/assets/images/copilot-cowork.jpg' | relative_url }}" alt="Copilot Cowork">
+<img src="{{ '/assets/images/copilot-cowork.jpg' | relative_url }}" alt="Copilot Cowork and its consumption-based cost model">
 
 What you really need to understand today about the consumption-based model
 

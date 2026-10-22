@@ -3,11 +3,9 @@ layout: post
 title: "Harness: the biggest Copilot Studio shift in recent years"
 date: 2026-08-10
 category: "Copilot Studio"
-tags: ["MCP", "AI Agents", "Copilot Studio", "Harness"]
+tags: ["AI Agents", "Copilot Studio", "Harness", "Skills"]
 excerpt: "Why the new GitHub Copilot Harness is not just another feature, but a paradigm shift in how we design enterprise AI agents."
 ---
-
-Harness: the biggest Copilot Studio shift in recent years.
 
 <img src="{{ '/assets/images/harness-costs-cover.jpg' | relative_url }}" alt="Harness: the biggest Copilot Studio shift in recent years">
 
@@ -15,7 +13,7 @@ Why the new GitHub Copilot Harness is not just another feature, but a paradigm s
 
 Quick summary: Microsoft is moving Copilot Studio from the chatbot-with-workflows paradigm to the agentic platform paradigm. You no longer design only conversational paths: you design capabilities, tools, memory, and specialized agents that collaborate to achieve an objective.
 
-## The right question is not “what is a Harness?
+## The right question is not “what is a Harness?”
 
 The right question is: why did Microsoft feel the need to introduce a new way to build and run agents?
 

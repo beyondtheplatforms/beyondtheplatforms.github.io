@@ -3,13 +3,11 @@ layout: post
 title: "SharePoint Metadata Filtering in Copilot Studio: How to Help the Agent Find the Right Document"
 date: 2026-09-15
 category: "Copilot Studio"
-tags: ["MCP", "AI Agents", "Copilot Studio", "Harness", "Sharepoint"]
+tags: ["AI Agents", "Copilot Studio", "SharePoint", "Metadata", "Harness"]
 excerpt: "If your Copilot Studio agent responds using the wrong document, the problem may not be the model. It may be the way you organized knowledge in SharePoint."
 ---
 
-SharePoint Metadata Filtering in Copilot Studio: How to Help the Agent Find the Right Document.
-
-<img src="{{ '/assets/images/SharePoint-CopilotStudio-Filtering.jpg' | relative_url }}" alt="SharePoint Metadata Filtering in Copilot Studio: How to Help the Agent Find the Right Document">
+<img src="{{ '/assets/images/sharepoint-metadata-filtering-cover.jpg' | relative_url }}" alt="SharePoint library metadata helping a Copilot Studio agent find the right document">
 
 If your Copilot Studio agent responds using the wrong document, the problem may not be the model. It may be the way you organized knowledge in SharePoint.
 

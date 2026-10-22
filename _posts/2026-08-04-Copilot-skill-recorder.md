@@ -7,9 +7,7 @@ tags: ["MCP", "AI Agents", "Copilot Studio", "Skills"]
 excerpt: "I taught a procedure to an AI Agent simply by recording my screen."
 ---
 
-Copilot Skill Recorder.
-
-<img src="{{ '/assets/images/copilot-skill-recorder.jpg' | relative_url }}" alt="Copilot Skill Recorder">
+<img src="{{ '/assets/images/copilot-skill-recorder.jpg' | relative_url }}" alt="Copilot Skill Recorder turning a screen recording into a reusable Skill">
 
 I taught a procedure to an AI Agent simply by recording my screen
 Over the past few months, we have seen a real acceleration around AI agents: Skills, MCP Servers, orchestration, intelligent automations, and new ways to turn operational activities into reusable capabilities.
