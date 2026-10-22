@@ -51,25 +51,3 @@ subtitle: "I work on digital innovation, AI Agents, Copilot Studio, Power Platfo
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-header">
-      <div>
-        <div class="section-eyebrow">Music</div>
-        <h2>My playlist</h2>
-      </div>
-      <p class="section-description">What I listen to during my development sessions.</p>
-    </div>
-    <iframe
-      style="border-radius: 12px"
-      src="https://open.spotify.com/embed/playlist/7nPt3hReGN3ytUv2D2fCTE?utm_source=generator"
-      width="100%"
-      height="352"
-      frameborder="0"
-      allowfullscreen
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy">
-    </iframe>
-  </div>
-</section>
-
