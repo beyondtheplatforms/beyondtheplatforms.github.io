@@ -82,3 +82,54 @@
 
 	toc.hidden = false;
 })();
+
+(() => {
+	const search = document.querySelector(".blog-search");
+	const posts = document.getElementById("blog-posts");
+	if (!search || !posts) return;
+
+	const input = search.querySelector("input");
+	const status = search.querySelector('[role="status"]');
+	const empty = document.getElementById("blog-search-empty");
+	if (!input || !status || !empty) return;
+
+	const normalize = text => text.normalize("NFKD").replace(/\p{M}/gu, "").toLowerCase();
+	const articles = [...posts.querySelectorAll("[data-search]")]
+		.map(element => ({ element, text: normalize(element.dataset.search) }));
+
+	function filterPosts() {
+		const terms = normalize(input.value).split(/\s+/).filter(Boolean);
+		let count = 0;
+		for (const article of articles) {
+			const matches = terms.every(term => article.text.includes(term));
+			article.element.hidden = !matches;
+			if (matches) count++;
+		}
+		const message = `${count} ${count === 1 ? "article" : "articles"}`;
+		if (status.textContent !== message) status.textContent = message;
+		empty.hidden = count !== 0;
+		if (window.history.state?.blogSearchQuery !== input.value) {
+			window.history.replaceState({ ...window.history.state, blogSearchQuery: input.value }, "");
+		}
+	}
+
+	function restoreSearch() {
+		if (typeof window.history.state?.blogSearchQuery === "string") {
+			input.value = window.history.state.blogSearchQuery;
+		}
+		filterPosts();
+	}
+
+	search.addEventListener("submit", event => event.preventDefault());
+	input.addEventListener("input", filterPosts);
+	input.addEventListener("keydown", event => {
+		if (event.key === "Escape" && input.value) {
+			event.preventDefault();
+			input.value = "";
+			filterPosts();
+		}
+	});
+	window.addEventListener("pageshow", restoreSearch);
+	restoreSearch();
+	search.hidden = false;
+})();
