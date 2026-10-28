@@ -85,6 +85,21 @@ a.card:hover, .card:hover, .list-item:hover { background: var(--card-hover); tra
 .post-content h2 { color: white; font-size: 32px; letter-spacing: -.04em; margin-top: 44px; }
 .post-content code { background: rgba(255,255,255,.08); padding: 2px 6px; border-radius: 6px; }
 .post-content pre { background: rgba(0,0,0,.28); padding: 18px; border-radius: 18px; overflow: auto; }
+.post-content h2, .post-content h3 { scroll-margin-top: 96px; }
+.post-toc { margin-bottom: 36px; padding: 20px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.post-toc summary { cursor: pointer; color: var(--text); font-size: 18px; font-weight: 700; }
+.post-toc-list, .post-toc-list ol { padding-left: 24px; color: var(--muted); line-height: 1.6; }
+.post-toc-list { margin: 16px 0 0; }
+.post-toc-list ol { margin-top: 8px; }
+.post-toc-list li + li { margin-top: 8px; }
+.post-toc-list a { overflow-wrap: anywhere; }
+.post-toc-list a:hover { color: var(--primary-light); text-decoration: underline; text-underline-offset: 3px; }
+.post-pagination { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: 56px; padding-top: 28px; border-top: 1px solid var(--border); }
+.post-pagination-link { display: flex; flex-direction: column; gap: 8px; min-width: 0; padding: 12px 0; }
+.post-pagination-label { color: var(--primary-light); font-size: 14px; }
+.post-pagination-title { color: var(--text); font-size: 18px; line-height: 1.5; overflow-wrap: anywhere; }
+.post-pagination-link:hover .post-pagination-title { text-decoration: underline; text-underline-offset: 3px; }
+.post-pagination-next { grid-column: 2; text-align: right; }
 
 .footer { margin-top: 60px; padding: 44px 0 28px; border-top: 1px solid var(--border); color: var(--muted-2); }
 .footer-inner { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
@@ -102,6 +117,8 @@ a.card:hover, .card:hover, .list-item:hover { background: var(--card-hover); tra
   .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .section-header { align-items: flex-start; flex-direction: column; }
   .newsletter-form { grid-template-columns: 1fr; }
+  .post-pagination { grid-template-columns: 1fr; gap: 16px; }
+  .post-pagination-next { grid-column: auto; text-align: left; }
   .hero { padding-top: 70px; }
 }
 

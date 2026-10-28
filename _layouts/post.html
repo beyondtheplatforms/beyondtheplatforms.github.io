@@ -1,12 +1,38 @@
 ---
 layout: default
 ---
+{% assign word_count = content | strip_html | number_of_words %}
+{% assign reading_minutes = word_count | divided_by: 200.0 | ceil | at_least: 1 %}
 <article class="post">
   <div class="container post-container">
     <a class="back-link" href="{{ '/blog/' | relative_url }}">← Back to the blog</a>
     <div class="section-eyebrow">{{ page.category }}</div>
     <h1>{{ page.title }}</h1>
-    <div class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.tags %} · {{ page.tags | join: " · " }}{% endif %}</div>
+    <div class="post-meta">{{ page.date | date: "%B %-d, %Y" }} · {{ reading_minutes }} min read{% if page.tags %} · {{ page.tags | join: " · " }}{% endif %}</div>
+    {% if word_count >= 800 %}
+    <nav class="post-toc" aria-labelledby="post-toc-title" hidden>
+      <details open>
+        <summary id="post-toc-title">On this page</summary>
+        <ol class="post-toc-list"></ol>
+      </details>
+    </nav>
+    {% endif %}
     <div class="post-content">{{ content }}</div>
+    {% if page.previous or page.next %}
+    <nav class="post-pagination" aria-label="Article navigation">
+      {% if page.previous %}
+      <a class="post-pagination-link" href="{{ page.previous.url | relative_url }}" rel="prev">
+        <span class="post-pagination-label">Previous article</span>
+        <span class="post-pagination-title">{{ page.previous.title | escape }}</span>
+      </a>
+      {% endif %}
+      {% if page.next %}
+      <a class="post-pagination-link post-pagination-next" href="{{ page.next.url | relative_url }}" rel="next">
+        <span class="post-pagination-label">Next article</span>
+        <span class="post-pagination-title">{{ page.next.title | escape }}</span>
+      </a>
+      {% endif %}
+    </nav>
+    {% endif %}
   </div>
 </article>

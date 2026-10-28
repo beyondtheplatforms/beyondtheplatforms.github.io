@@ -46,3 +46,39 @@
 	setMenuOpen(false);
 	document.body.classList.add("menu-ready");
 })();
+
+(() => {
+	const toc = document.querySelector(".post-toc");
+	const postContent = document.querySelector(".post-content");
+	if (!toc || !postContent) return;
+
+	const list = toc.querySelector(".post-toc-list");
+	const headings = [...postContent.querySelectorAll("h2[id], h3[id]")]
+		.filter(heading => heading.id && heading.textContent.trim());
+	if (!list || headings.filter(heading => heading.tagName === "H2").length < 3) return;
+
+	let sectionItem = null;
+	let subsectionList = null;
+	for (const heading of headings) {
+		const item = document.createElement("li");
+		const link = document.createElement("a");
+		link.href = `#${encodeURIComponent(heading.id)}`;
+		link.textContent = heading.textContent.trim();
+		item.append(link);
+		heading.tabIndex = -1;
+
+		if (heading.tagName === "H3" && sectionItem) {
+			if (!subsectionList) {
+				subsectionList = document.createElement("ol");
+				sectionItem.append(subsectionList);
+			}
+			subsectionList.append(item);
+		} else {
+			list.append(item);
+			sectionItem = heading.tagName === "H2" ? item : null;
+			subsectionList = null;
+		}
+	}
+
+	toc.hidden = false;
+})();
