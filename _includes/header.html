@@ -1,11 +1,22 @@
-<header class="navbar">
-  <div class="container nav-inner">
-    <a class="logo" href="{{ '/' | relative_url }}">Beyond The <span>Platforms</span></a>
-    <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false">☰</button>
-    <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
-      <a href="{{ '/blog/' | relative_url }}">Blog</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a class="nav-cta" href="{{ '/newsletter/' | relative_url }}">Newsletter</a>
-    </nav>
+{%- assign path = page.url -%}
+<header class="nav" data-nav>
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="Beyond The Platforms, home">
+    <img class="brand__logo brand__logo--light" src="{{ '/assets/images/brand/logo-light.png' | relative_url }}" alt="Beyond The Platforms" width="837" height="262">
+    <img class="brand__logo brand__logo--dark" src="{{ '/assets/images/brand/logo-dark.png' | relative_url }}" alt="" aria-hidden="true" width="837" height="262">
+  </a>
+  <nav class="nav__links" id="primary-navigation" aria-label="Primary navigation">
+    <a href="{{ '/blog/' | relative_url }}"{% if path contains '/blog/' %} aria-current="page"{% endif %}>Blog</a>
+    <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
+    <a href="{{ '/about/' | relative_url }}"{% if path contains '/about/' %} aria-current="page"{% endif %}>About</a>
+    <a class="nav__cta" href="{{ '/newsletter/' | relative_url }}"{% if path contains '/newsletter/' %} aria-current="page"{% endif %}>Newsletter</a>
+  </nav>
+  <div class="nav__tools">
+    <button class="themesw" type="button" data-theme-toggle aria-label="Switch theme">
+      <span class="themesw__sun">{% include icon.html name="sun" %}</span>
+      <span class="themesw__moon">{% include icon.html name="moon" %}</span>
+    </button>
+    <button class="burger" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
+      <span></span><span></span>
+    </button>
   </div>
 </header>

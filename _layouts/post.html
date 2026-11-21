@@ -1,14 +1,28 @@
 ---
 layout: default
 ---
-{% assign word_count = content | strip_html | number_of_words %}
-{% assign reading_minutes = word_count | divided_by: 200.0 | ceil | at_least: 1 %}
+{%- assign word_count = content | strip_html | number_of_words -%}
+{%- assign reading_minutes = word_count | divided_by: 200.0 | ceil | at_least: 1 -%}
+<div class="progress" aria-hidden="true"><span data-progress></span></div>
 <article class="post">
-  <div class="container post-container">
-    <a class="back-link" href="{{ '/blog/' | relative_url }}">← Back to the blog</a>
-    <div class="section-eyebrow">{{ page.category }}</div>
+  <header class="post__head wrap wrap--post">
+    <a class="back-link" href="{{ '/blog/' | relative_url }}">← All articles</a>
+    {% if page.category %}<p class="eyebrow">{{ page.category }}</p>{% endif %}
     <h1>{{ page.title }}</h1>
-    <div class="post-meta">{{ page.date | date: "%B %-d, %Y" }} · {{ reading_minutes }} min read{% if page.tags %} · {{ page.tags | join: " · " }}{% endif %}</div>
+    {% if page.subtitle %}<p class="post__dek">{{ page.subtitle }}</p>{% endif %}
+    <div class="post__meta">
+      <img class="post__avatar" src="{{ '/assets/images/hero-portrait.jpg' | relative_url }}" alt="" width="40" height="40">
+      <span><strong>Paolo Asnaghi</strong><br>{{ page.date | date: "%B %-d, %Y" }} · {{ reading_minutes }} min read</span>
+    </div>
+  </header>
+
+  {% if page.image %}
+  <figure class="post__cover wrap wrap--wide">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
+  </figure>
+  {% endif %}
+
+  <div class="wrap wrap--post">
     {% if word_count >= 800 %}
     <nav class="post-toc" aria-labelledby="post-toc-title" hidden>
       <details open>
@@ -17,18 +31,35 @@ layout: default
       </details>
     </nav>
     {% endif %}
+
     <div class="post-content">{{ content }}</div>
+
+    {% if page.tags %}
+    <div class="post__tags">
+      {% for tag in page.tags %}<a class="tag" href="{{ '/blog/' | relative_url }}?tag={{ tag | url_encode }}">{{ tag }}</a>{% endfor %}
+    </div>
+    {% endif %}
+
+    <aside class="author">
+      <img src="{{ '/assets/images/hero-portrait.jpg' | relative_url }}" alt="Paolo Asnaghi" width="88" height="88" loading="lazy">
+      <div>
+        <p class="author__name">Written by Paolo Asnaghi</p>
+        <p>Power Platform Developer, BI Specialist and speaker. I build AI agents, apps and automations on Microsoft 365, and write here about what I learn along the way.</p>
+        <p class="author__links"><a href="{{ '/about/' | relative_url }}">About me</a> · <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a></p>
+      </div>
+    </aside>
+
     {% if page.previous or page.next %}
     <nav class="post-pagination" aria-label="Article navigation">
       {% if page.previous %}
       <a class="post-pagination-link" href="{{ page.previous.url | relative_url }}" rel="prev">
-        <span class="post-pagination-label">Previous article</span>
+        <span class="post-pagination-label">← Previous article</span>
         <span class="post-pagination-title">{{ page.previous.title | escape }}</span>
       </a>
       {% endif %}
       {% if page.next %}
       <a class="post-pagination-link post-pagination-next" href="{{ page.next.url | relative_url }}" rel="next">
-        <span class="post-pagination-label">Next article</span>
+        <span class="post-pagination-label">Next article →</span>
         <span class="post-pagination-title">{{ page.next.title | escape }}</span>
       </a>
       {% endif %}
@@ -36,3 +67,7 @@ layout: default
     {% endif %}
   </div>
 </article>
+
+<section class="section">
+  <div class="wrap">{% include newsletter-form.html %}</div>
+</section>

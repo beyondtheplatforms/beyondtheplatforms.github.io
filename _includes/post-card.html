@@ -1,0 +1,20 @@
+{%- assign p = include.post -%}
+{%- assign words = p.content | strip_html | number_of_words -%}
+{%- assign mins = words | divided_by: 200.0 | ceil | at_least: 1 -%}
+<a class="card{% if include.big %} card--big{% endif %}" href="{{ p.url | relative_url }}" data-reveal{% if include.search %} data-search="{{ p.title | escape }} {{ p.category | escape }} {{ p.tags | join: ' ' | escape }} {{ p.content | strip_html | escape }}" data-tags="{{ p.category | escape }}|{{ p.tags | join: '|' | escape }}"{% endif %}>
+  {%- if p.image %}
+  <span class="card__media"><img src="{{ p.image | relative_url }}" alt="" loading="lazy"></span>
+  {%- endif %}
+  <span class="card__body">
+    <span class="card__top">
+      <span class="card__cat">{{ p.category }}</span>
+      <span class="card__date">{{ p.date | date: "%b %-d, %Y" }}</span>
+    </span>
+    <span class="card__title">{{ p.title }}</span>
+    <span class="card__sum">{{ p.excerpt | strip_html | strip | truncate: 160 }}</span>
+    <span class="card__foot">
+      <span>{{ mins }} min read</span>
+      <span class="card__arrow" aria-hidden="true">↗</span>
+    </span>
+  </span>
+</a>
