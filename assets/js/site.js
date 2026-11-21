@@ -19,6 +19,79 @@
 	label();
 })();
 
+/* ---------- home intro: logo in the centre, then into the nav (about 2 s) ---------- */
+(() => {
+	const root = document.documentElement;
+	const intro = document.getElementById("intro");
+	if (!intro || !root.classList.contains("intro-play")) return;
+	try { sessionStorage.setItem("btp-intro-seen", "1"); } catch (e) {}
+
+	const logo = intro.querySelector("[data-intro-logo]");
+	const reveal = intro.querySelector("[data-intro-reveal]");
+	const star = intro.querySelector("[data-intro-star]");
+	const skip = intro.querySelector(".intro__skip");
+	const visible = (box) => [...box.querySelectorAll("img")].find((img) => getComputedStyle(img).display !== "none");
+	const anims = [];
+	let timer = null;
+	let done = false;
+	let started = false;
+
+	const finish = () => {
+		if (done) return;
+		done = true;
+		clearTimeout(timer);
+		anims.forEach((a) => a.cancel());
+		root.classList.remove("intro-play", "intro-release");
+		intro.remove();
+		["click", "keydown", "wheel", "touchmove"].forEach((ev) => window.removeEventListener(ev, finish));
+	};
+	intro.addEventListener("click", finish);
+	["keydown", "wheel", "touchmove"].forEach((ev) => window.addEventListener(ev, finish, { passive: true }));
+	if (!logo.animate) { finish(); return; }
+
+	const start = () => {
+		if (done || started) return;
+		started = true;
+		// 1) reveal left to right, from blurred to sharp
+		anims.push(reveal.animate(
+			[{ clipPath: "inset(0 100% 0 0)", filter: "blur(10px)", opacity: 0.3 },
+			 { clipPath: "inset(0 0% 0 0)", filter: "blur(0px)", opacity: 1 }],
+			{ duration: 800, easing: "cubic-bezier(.65,0,.35,1)", fill: "forwards" }));
+		// 2) the star glows
+		anims.push(star.animate(
+			[{ opacity: 0, transform: "translate(-50%,-50%) scale(0)" },
+			 { opacity: 1, transform: "translate(-50%,-50%) scale(1.15)", offset: 0.45 },
+			 { opacity: 0, transform: "translate(-50%,-50%) scale(.6)" }],
+			{ duration: 650, delay: 700, easing: "ease-out", fill: "forwards" }));
+		// 3) the logo flies to the exact position of the nav logo
+		timer = setTimeout(() => {
+			const target = visible(document.querySelector(".nav .brand"));
+			if (!target) { finish(); return; }
+			const from = logo.getBoundingClientRect();
+			const to = target.getBoundingClientRect();
+			const scale = to.width / from.width;
+			if (skip) skip.style.opacity = 0;
+			const fly = logo.animate(
+				[{ transform: "translate(0,0) scale(1)" },
+				 { transform: `translate(${to.left - from.left}px,${to.top - from.top}px) scale(${scale})` }],
+				{ duration: 700, easing: "cubic-bezier(.7,0,.2,1)", fill: "forwards" });
+			const fade = intro.animate(
+				[{ backgroundColor: getComputedStyle(intro).backgroundColor }, { backgroundColor: "rgba(0,0,0,0)" }],
+				{ duration: 450, delay: 250, easing: "ease-out", fill: "forwards" });
+			anims.push(fly, fade);
+			// let the page content rise while the logo is still flying
+			setTimeout(() => root.classList.add("intro-release"), 250);
+			fly.onfinish = finish;
+		}, 1300);
+	};
+	// start when the logo image is ready, at most after 1.5 s
+	const img = visible(reveal);
+	if (img && !img.complete) {
+		img.addEventListener("load", start, { once: true });
+		setTimeout(start, 1500);
+	} else start();
+})();
+
 /* ---------- sticky nav background + mobile menu ---------- */
 (() => {
 	const nav = document.querySelector("[data-nav]");
