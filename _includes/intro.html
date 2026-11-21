@@ -1,0 +1,15 @@
+{%- comment -%}
+  Home intro: the logo appears in the centre, the star glows, then the logo flies
+  into the top-left corner of the nav. Shown once per browser session, skipped with
+  "reduce motion", by a click, a key or scrolling. Animation code is in assets/js/site.js.
+{%- endcomment -%}
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__logo" data-intro-logo>
+    <div class="intro__reveal" data-intro-reveal>
+      <img class="brand__logo brand__logo--light" src="{{ '/assets/images/brand/logo-light.png' | relative_url }}" alt="" width="837" height="262">
+      <img class="brand__logo brand__logo--dark" src="{{ '/assets/images/brand/logo-dark.png' | relative_url }}" alt="" width="837" height="262">
+    </div>
+    <span class="intro__star" data-intro-star></span>
+  </div>
+  <span class="intro__skip">Tap to skip</span>
+</div>

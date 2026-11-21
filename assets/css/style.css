@@ -360,3 +360,16 @@ h2 { font-size: clamp(32px, 4.4vw, 56px); font-weight: 700; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js [data-reveal] { opacity: 1; transform: none; }
 }
+
+/* ---------- home intro (see _includes/intro.html and site.js) ---------- */
+.intro { display: none; }
+.intro-play .intro { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; background: var(--bg); cursor: pointer; }
+.intro-play:not(.intro-release) body { overflow: hidden; }
+.intro-play .nav .brand__logo { opacity: 0; }
+.intro-play:not(.intro-release) .hero__copy > *, .intro-play:not(.intro-release) .hero__latest { animation-play-state: paused; }
+.intro__logo { position: relative; width: min(78vw, 860px); transform-origin: 0 0; will-change: transform; }
+.intro .brand__logo { height: auto; width: 100%; }
+.intro__reveal { clip-path: inset(0 100% 0 0); filter: blur(10px); }
+.intro__star { position: absolute; left: 39.4%; top: 5.2%; width: 22%; aspect-ratio: 1; border-radius: 50%; opacity: 0; pointer-events: none; transform: translate(-50%, -50%) scale(0); mix-blend-mode: screen; background: radial-gradient(circle, rgba(196, 181, 253, .95) 0, rgba(139, 92, 246, .55) 18%, rgba(139, 92, 246, .12) 45%, transparent 70%); }
+:root[data-theme="light"] .intro__star { mix-blend-mode: multiply; background: radial-gradient(circle, rgba(124, 58, 237, .7) 0, rgba(124, 58, 237, .3) 18%, rgba(124, 58, 237, .08) 45%, transparent 70%); }
+.intro__skip { position: absolute; top: 28px; left: 50%; transform: translateX(-50%); font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); opacity: .7; transition: opacity .3s; }

@@ -7,6 +7,12 @@
     try { var s = localStorage.getItem("btp-theme"); if (s === "light" || s === "dark") t = s; } catch (e) {}
     document.documentElement.dataset.theme = t;
     document.documentElement.classList.add("js");
+    // Intro animation on the home page: once per session, never with "reduce motion"
+    try {
+      var home = location.pathname === "{{ '/' | relative_url }}" || location.pathname === "{{ '/index.html' | relative_url }}";
+      var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (home && !reduce && !sessionStorage.getItem("btp-intro-seen")) document.documentElement.classList.add("intro-play");
+    } catch (e) {}
   })();
 </script>
 {% seo %}

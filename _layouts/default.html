@@ -5,6 +5,7 @@
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
+  {% if page.url == "/" %}{% include intro.html %}{% endif %}
   {% include header.html %}
   <main id="main-content" tabindex="-1">{{ content }}</main>
   {% include footer.html %}
