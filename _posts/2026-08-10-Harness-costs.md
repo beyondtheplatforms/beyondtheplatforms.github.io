@@ -5,9 +5,9 @@ date: 2026-08-10
 category: "Copilot Studio"
 tags: ["AI Agents", "Copilot Studio", "Harness", "Skills"]
 excerpt: "Why the new GitHub Copilot Harness is not just another feature, but a paradigm shift in how we design enterprise AI agents."
+image: "/assets/images/harness-costs-cover.webp"
+image_alt: "Harness: the biggest Copilot Studio shift in recent years"
 ---
-
-<img src="{{ '/assets/images/harness-costs-cover.jpg' | relative_url }}" alt="Harness: the biggest Copilot Studio shift in recent years" loading="lazy" width="1536" height="1024">
 
 Why the new GitHub Copilot Harness is not just another feature, but a paradigm shift in how we design enterprise AI agents.
 

@@ -1,14 +1,14 @@
-<footer class="footer">
-  <div class="container footer-inner">
-    <div>
-      <strong>Beyond The Platforms</strong><br>
-      <span>AI · Copilot Studio · Microsoft Fabric · Power Platform</span>
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div class="foot__brand">
+      <img class="brand__logo brand__logo--light" src="{{ '/assets/images/brand/logo-light.png' | relative_url }}" alt="Beyond The Platforms" width="837" height="262" loading="lazy">
+      <img class="brand__logo brand__logo--dark" src="{{ '/assets/images/brand/logo-dark.png' | relative_url }}" alt="" aria-hidden="true" width="837" height="262" loading="lazy">
+      <p>AI · Copilot Studio · Microsoft Fabric · Power Platform</p>
     </div>
-    <div class="socials">
-      {% for social in site.data.social %}
-        <a href="{{ social.url }}" target="_blank" rel="noopener">{{ social.name }}</a>
-      {% endfor %}
-    </div>
+    {% include socials.html %}
   </div>
-  <div class="container footer-bottom">© {{ site.time | date: '%Y' }} Beyond The Platforms. Built with GitHub Pages and Jekyll.</div>
+  <div class="wrap foot__bottom">
+    <span>© {{ site.time | date: '%Y' }} Paolo Asnaghi · Beyond The Platforms</span>
+    <span><a href="{{ '/feed.xml' | relative_url }}">RSS</a> · Built with GitHub Pages and Jekyll</span>
+  </div>
 </footer>
